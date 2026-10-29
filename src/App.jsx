@@ -31,35 +31,35 @@ function App() {
   };
 
   return (
-    <div className="container">
-      {/* Header displaying student name and section */}
-      <div className="header-title">
-        {STUDENT_NAME} - {STUDENT_SECTION}
-      </div>
+    <div className="app-container">
+      <div className="card">
+        {/* Requirement A: Full name and section header */}
+        <h1 className="header-title">
+          {STUDENT_NAME} - {STUDENT_SECTION}
+        </h1>
 
-      <div className="calculator-card">
         {/* Main Display Screen */}
         <div className="display-box">
           {display}
         </div>
 
-        {/* Calculator Keypad */}
+        {/* 3x4 Keypad matching target layout */}
         <div className="keypad">
-          <button className="btn btn-num" onClick={() => handleClick('7')}>7</button>
-          <button className="btn btn-num" onClick={() => handleClick('8')}>8</button>
-          <button className="btn btn-num" onClick={() => handleClick('9')}>9</button>
+          <button className="btn" onClick={() => handleClick('7')}>7</button>
+          <button className="btn" onClick={() => handleClick('8')}>8</button>
+          <button className="btn" onClick={() => handleClick('9')}>9</button>
 
-          <button className="btn btn-num" onClick={() => handleClick('4')}>4</button>
-          <button className="btn btn-num" onClick={() => handleClick('5')}>5</button>
-          <button className="btn btn-num" onClick={() => handleClick('6')}>6</button>
+          <button className="btn" onClick={() => handleClick('4')}>4</button>
+          <button className="btn" onClick={() => handleClick('5')}>5</button>
+          <button className="btn" onClick={() => handleClick('6')}>6</button>
 
-          <button className="btn btn-num" onClick={() => handleClick('1')}>1</button>
-          <button className="btn btn-num" onClick={() => handleClick('2')}>2</button>
-          <button className="btn btn-num" onClick={() => handleClick('3')}>3</button>
+          <button className="btn" onClick={() => handleClick('1')}>1</button>
+          <button className="btn" onClick={() => handleClick('2')}>2</button>
+          <button className="btn" onClick={() => handleClick('3')}>3</button>
 
-          <button className="btn btn-num" onClick={() => handleClick('0')}>0</button>
-          <button className="btn btn-action" onClick={() => handleClick('NAME')}>NAME</button>
-          <button className="btn btn-subj" onClick={() => handleClick('SUBJ')}>SUBJ</button>
+          <button className="btn" onClick={() => handleClick('NAME')}>NAME</button>
+          <button className="btn" onClick={() => handleClick('0')}>0</button>
+          <button className="btn" onClick={() => handleClick('SUBJ')}>SUBJ</button>
         </div>
       </div>
     </div>
